@@ -10,3 +10,11 @@ test("Should return Isfar Uddin", () => {
         lastName: "Uddin"
     });
 });
+
+test("Should return email equal to Sincere@april.biz", () => {
+    expect.assertions(0);
+    return functions.fetchUser().then((data) => {
+        expect(data.email).toEqual(
+            "Sincere@april.biz")
+    })
+});

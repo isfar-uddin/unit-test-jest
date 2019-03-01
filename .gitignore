@@ -62,4 +62,4 @@ typings/
 
 # .xml file
 
-.idea/*
+.idea/workspace.xml
