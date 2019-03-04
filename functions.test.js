@@ -12,7 +12,7 @@ test("Should return Isfar Uddin", () => {
 });
 
 test("Should return email equal to Sincere@april.biz", () => {
-    expect.assertions(0);
+    expect.assertions(1);
     return functions.fetchUser().then((data) => {
         expect(data.email).toEqual(
             "Sincere@april.biz")
