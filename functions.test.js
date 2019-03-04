@@ -8,6 +8,24 @@ afterAll(() => closeDatabase());
 const initDatabase = () => console.log("Initialize the database");
 const closeDatabase = () => console.log("Close the database");
 
+const checkName = () => console.log("Check name.....");
+
+describe("Checking name....", () => {
+
+    beforeEach(() => checkName());
+
+    test("User should be isfar.", () => {
+        const user = "isfar";
+        expect(user).toBe("isfar");
+    });
+
+    test("User should be mamun", () => {
+        const user = "mamun";
+        expect(user).toBe("mamun");
+    });
+});
+
+
 test("Add 2+2 is equal to 4", () => {
     expect(functions.add(2,2)).toBe(4);
 });
